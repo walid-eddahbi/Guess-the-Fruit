@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d83f7e2869.js" crossorigin="anonymous"></script>
+    <title>Guess the Fruit</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+</head>
+<body>
+    <div class="container mx-auto ">
+        <h1 class="text-center">Guess the Fruit <i class="fa-solid fa-question"></i></h1>
+        <div class="fw-bold">SCORE : <span id="score">  </span> </div>
+        <div class="row border border-5 mt-3 gameDisplay">
+            <div class="col-12 col-lg-6 d-flex flex-column align-item-center justify-content-center">
+                <label for="guessed" class="form-label">Word search</label>
+                <input type="password" id="guessed" class="form-control" readonly>
+            </div>
+            <div class="col-12 col-lg-6 border border-5">
+                <div class="bg-dark d-flex justify-content-center align-item-center" style="height: 600px;">
+                    <img src="images/win.png" alt="" id="winner">
+                    
+                    <div id="Hangman">
+                        <div id="mistake-5">
+                        <img src="images/hanged-man-icon.png" class="w-100 h-100">
+                        </div>
+                        
+                        <div id="mistake-4">
+                        </div>
+                        
+                        <div id="mistake-3">
+                        </div>
+                        
+                        <div id="mistake-2">
+                        </div>
+                        
+                        <div id="mistake-1">
+                        </div>
+                        
+                        </div>
+
+                </div>
+                <div class="mt-2">
+                    <label for="guesses" class="lead h3 fw-bold">tested Letters</label>
+                    <div id="correctLetters" class="row d-flex w-100 justify-content-center" style="flex-wrap: nowrap;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row mt-3">
+            <label class="col lead">Enter the letter or word you want to try:</label>
+            <input type="text" id="userguss" class="form-control col">
+        </div>
+
+        <input type="button" class="btn btn-primary d-block mx-auto mt-3" value="valider" id="check" onclick="checkGuess()">
+
+
+        <div class="d-flex justify-content-center my-4">
+
+        <div id="keyBoard">
+           
+            
+        </div>
+        </div>
+        <div class="my-4 d-flex justify-content-center">
+            <a href="#" role="button" class="btn btn-dark d-block mx-auto mt-3" style="text-decoration: none;" id="Replay" onclick="PlayAgain()">Play Again</a>
+        </div>
+    </div>
+
+    <script src="js/script.js">
+
+    </script>
+</body>
+</html>

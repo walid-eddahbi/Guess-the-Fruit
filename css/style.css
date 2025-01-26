@@ -1,0 +1,132 @@
+body{
+    background-color: rgba(202, 209, 227, 0.875);
+}
+#keyBoard{
+    box-shadow: 18px 16px 6px rgb(113, 107, 107);
+    padding: 22px 32px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    max-width: 100%;
+}
+#keyBoard  button{
+    margin: 5px;
+    padding: 12px 22px;
+    background-color: rgba(240, 248, 255, 0.727);
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    
+}
+#keyBoard > button:hover{
+    background-color: rgba(240, 248, 255, 0.86);
+    color: black;
+}
+#keyBoard div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+button:disabled {
+    opacity: 0.5;
+}
+#winner,#loser{
+    display: none;
+    width: 100%;
+}
+.letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    background-color: aliceblue;
+    border: 4px solid blue;
+    border-radius: 12px;
+    margin: 18px 8px;
+    text-align: center;
+    padding: 28px;
+    font-weight: bold;
+    height: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+@media screen and (max-width: 768px) {
+    .letter{
+        margin: 2px;
+    }
+    .gameDisplay{
+        width: 100%;
+        margin: 0;
+    }
+    .letter{
+        margin-right: 8px;
+        padding: 28px 12px;
+    }
+    #keyBoard div{
+        width: 100%;
+    }
+}
+
+#Hangman{
+    display: none;
+	position: relative;
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+#mistake-1{
+    display: none;
+	position: absolute;
+    bottom: 20px;
+    height: 12px;
+    width: 40%;
+    background: white;
+    left: 30%;
+}
+
+#mistake-2{
+    display: none;
+	position: absolute;
+    bottom: 20px;
+    height: 80%;
+    width: 2%;
+    background: white;
+	left: 40%;
+    
+}
+#mistake-3{
+    display: none;
+
+	position: absolute;
+    top: 91px;
+    height: 12px;
+    width: 30%;
+    background: white;
+	left: 40%;
+}
+#mistake-4{
+    display: none;
+
+	position: absolute;
+    top: 14%;
+    left: 65%;
+    background: white;
+    height: 20%;
+    width: 1%;
+}
+#mistake-5 {
+    display: none;
+	position: absolute;
+    top: 10%;
+    left: 32%;
+}
